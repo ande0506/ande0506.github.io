@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Assignment 3</title>
+</head>
+<body>
+	<div id="wrapper" class="wrapper">
+		<section id="Assignment-3-form">
+			<h1>Form</h1>
+			<form action="somepage.php" method="get">
+				<div id="First-name-container" class="form-element">
+					<label for="Firstname">First Name</label>
+					<input type="text" name="FirstName" id="Firstname" placeholder="First name goes here" required>
+				</div>
+				<div id="Last-name-container" class="form-element">
+					<label for="Lastname">Last Name</label>
+					<input type="text" name="Lastname" id="Lastname" placeholder="Last name goes here" required>
+				</div>
+				<div id="email-container" class="form-element">
+					<label for="email">Email ID</label>
+					<input type="email" name="email" id="email" placeholder="example@g.com" required>
+				</div>
+				<div id="password-container" class="form-element">
+					<label for="password">Password</label>
+					<input type="password" name="password" id="password" required>
+				</div>
+				<div id="introductory-text" class="form-element">
+					<label for="introductory-text"></label>
+					<textarea name="introductory-text" placeholder="Tell me about yourself"></textarea>
+				</div>
+				<div id="date-container" class="form-element">
+                    <label for="date">Date of Birth</label>
+                    <input type="date" name="date" id="date">
+				</div>
+				<div id="number-container" class="form-element">
+					<label for="number">Phone Number</label>
+					<input type="number" name="number" placeholder="123-456-7891" required>
+				</div>
+				<div id="radio-container" class="form-element">
+					<p>Gender</p>
+					<label for="woman">
+						<input type="radio" name="Gender-form" id="woman" value="woman">
+						Woman
+					</label>
+					<label for="man" class="form element">
+						<input type="radio" name="Gender-form" id="man" value="man">
+						Man
+					</label>
+					<label for="other" class="form element">
+						<input type="radio" name="gender-form" id="other" value="other">
+						Other
+					</label>
+					<label for="prefernottosay" class="form element">
+						<input type="radio" name="gender-form" id="prefernottosay" value="prefer not to say">
+						Prefer not to say
+					</label>
+				</div>
+				<div id="drop-down-container" class="form-element">
+					<label for="Country">Country</label>
+					<select id="Country" name="Country">
+						<option value="Canada">Canada</option>
+						<option value="United States">United States</option>
+						<option value="South Africa">South Africa</option>
+						<option value="Netherlands">Netherlands</option>
+					</select>
+				</div>
+				<div id="option-group-container" class="form-element">
+					<label for="Province">Province</label>
+					<select id="Province" name="Province">
+						<optgroup label="Canada">
+							<option value="Ontario">Ontario</option>
+							<option value="Quebec">Quebec</option>
+							<option value="Alberta">Alberta</option>
+							<option value="British Columbia">British Columbia</option>
+						</optgroup>
+						<optgroup label="South Africa">
+							<option value="Northern Cape">Northern Cape</option>
+							<option value="Western Cape">Western Cape</option>
+							<option value="Eastern Cape">Eastern Cape</option>
+							<option value="Limpopo">Limpopo</option>
+						</optgroup>
+					</select>
+				</div>
+				<div id="City-container" class="form-element">
+					<label for="City">City</label>
+					<input type="text" name="City" id="City">
+				</div>
+				<div id="Address-container" class="form-element">
+					<label for="Address">Address</label>
+					<input type="text" name="Address" id="Address">
+				</div>
+				<div id="Postal-code-container" class="form-element">
+					<label for="Postal-code">Postal code</label>
+					<input type="text" name="Postal code" id="Postal-code" required>
+				</div>
+				<div>
+					<fieldset>
+						<legend>Hobbies/interest</legend>
+						<div>
+							<label for="horsebackriding">
+							<input type="checkbox" name="horsebackriding" id="horsebackriding" checked>
+							Horseback Riding
+                            </label>
+							<label for="drawing">
+								<input type="checkbox" name="drawing" id="drawing" checked>
+								Drawing
+							</label>
+							<label for="painting">
+								<input type="checkbox" name="painting" id="painting" checked>
+								Painting
+							</label>
+							<label for="hockey">
+								<input type="checkbox" name="hockey" id="hockey">
+								Hockey
+							</label>
+							<label for="carracing">
+								<input type="checkbox" name="carracing" id="carracing">
+								Car Racing
+							</label>
+							<label for="reading">
+								<input type="checkbox" name="reading" id="reading" checked>
+								Reading
+							</label>
+						</div>
+					</fieldset>
+				</div>
+				<div id="url-container" class="form-element">
+					<label for="url">Website</label>
+					<input type="url" name="url" id="url">
+				</div>
+				<button type="submit">Submit</button>
+				<button type="reset">Reset</button>
+			</form>
+		</section>
+	</div>
+</body>
+</html>
