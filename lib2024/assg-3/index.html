@@ -4,7 +4,7 @@
 	<title>Assignment 3</title>
 	<link href="style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower|PT+Sans&display=swap" rel="stylesheet">
-	<!-- Linking fonts and style.css to this document-->
+	<!-- Linking fonts and style.css to this document. This comes up as an error in the Validator because (|) is an illegal character in query but it is part of the link.-->
 </head>
 <body>
 	<div id="wrapper" class="wrapper">
@@ -53,9 +53,9 @@
 						Prefer not to say
 					</label>
 				</div>
-				<div id="number-container" class="form-element">
-					<label for="number">Phone Number</label>
-					<input type="number" name="number" placeholder="123-456-7891" required>
+				<div id="number" class="form-element">
+					<label for="input-id">Phone Number</label>
+					<input type="number" name="number" id="input-id" placeholder="123-456-7891" required>
 				</div>
 				
 				<div id="drop-down-container" class="form-element">
@@ -94,7 +94,7 @@
 				</div>
 				<div id="postal-code-container" class="form-element">
 					<label for="postal-code">Postal code</label>
-					<input type="text" name="postal-code" id="Postal-code" required>
+					<input type="text" name="postal-code" id="postal-code" required>
 				</div>
 				<div>
 					<fieldset>
@@ -127,10 +127,10 @@
 					<label for="url">Website</label>
 					<input type="url" name="url" id="url">
 				</div>
-				<div id="introductory-text" class="form-element">
+				<div id="intro-text" class="form-element">
 					<h2>Finally...tell us why you deserve to win free horse feed for a year?</h2>
 					<label for="introductory-text"></label>
-					<textarea name="introductory-text"></textarea>
+					<textarea name="introductory-text" id="introductory-text"></textarea>
 				</div>
 				<button type="submit">Submit</button>
 				<button type="reset">Reset</button>
