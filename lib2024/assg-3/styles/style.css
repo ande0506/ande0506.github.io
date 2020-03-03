@@ -6,7 +6,7 @@
 html {
 	font-family: "PT Sans", sans-serif;
 	background-color: #FEEC57;
-	background-image: url(images/hay.jpg);
+	background-image: url(../images/hay.jpg);
 	height: 1400px;
 	width: 1200px;
   	background-position: center;
