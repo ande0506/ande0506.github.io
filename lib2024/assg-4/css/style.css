@@ -1,75 +1,117 @@
 @charset "utf-8";
 
-* {
+
+html {
+	font-family: Arial; 
 	box-sizing: border-box;
 }
 
-body {
-	font-family: Arial; 
-}
-
 header {
-	background-color: #63d47b;
-	padding: 20px;
-	font-size: 25px;
-	font-stretch: 
+	background-color: #7cc576;
+	width: 100%;
 }
 
 .logo {
-	float: left;
-	width: 100px;
+	position: static;
+	width: 115px;
+	box-sizing: border-box;
+	padding: 10px;
+	display: inline-block;
 }
+
+body {
+	margin: 0;
+}
+
 
 nav {
-	float: center;
-	width: 30%;
-	padding: 20px;
+	width: 100%;
+	/*padding: 20px;*/
 	overflow: hidden;
-	display: block;
 }
 
-nav ul {
-	list-style-type: none;
-	padding: 0;
-}
-
-nav ul a {
+nav a {
 	float: left;
 	display: block;
 	text-align: center;
-	padding: 40px 30px 50px 20px;
 	text-decoration: none;
-	background-color: lightblue;
+	background-color: #6dcff6;
+	border-radius: 5px;
+	margin: 20px 50px;
+	padding: 15px 30px;
 
 }
 
-article {
-	float: left;
-	padding: 20px;
-	width: 70%;
-	background-color: #f1f1f1;
+div > h1 {
+	display: inline-block;
+	border: 0;
+	margin: 0;
+}
+
+section {
+	background-image: url(../img/circles-light.png);
+	text-align: left;
+}
+
+.image-flex {
+	position: static;
+	display: block;
+	width: 100%;
+}
+
+.image-flex-sidebar {
+	position: static;
+	display: block;
+}
+
+.inline-blk {
+	display: inline-block;
+}
+
+.main-content {
+	display: inline-block;
+	width: 55%;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 .sidebar {
-	float: left;
+	display: inline-block;
+	width: 35%;
+	box-sizing: border-box;
+	padding-left: 5%;
+	padding-top: 5%;
+}
+
+.img-container {
+	position: static;
+	width: 100%;
 	padding: 20px;
-	width: 30%
+}
+
+.align {
+	display: inline-block;
+	margin: 0 20px;
+}
+
+.align p {
+	text-align: center;
 }
 
 footer {
 	background-color: #63d47b;
-	padding: 10px;
-	text-align: left;
 }
 
-footer img {
-	float: right;
-	background-color: #63d47b;
+.social-media-container a {
+	text-decoration: none;
 }
 
-@media (max-width: 960px) {
-	nav, article {
-		width: 100%
-		height: auto;
-	}
-	}
+.social-media-container {
+	text-align: right;
+	margin-top: 9px;
+}
+
+.social-media {
+	width: 50px;
+	margin: 0 5px;
+}
