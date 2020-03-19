@@ -31,10 +31,12 @@ body {
 	margin: 0;
 }
 
+.navigation {
+	text-align: center;
+}
 
 nav {
 	width: 100%;
-	/*padding: 20px;*/
 	overflow: hidden;
 }
 
@@ -47,6 +49,8 @@ nav a {
 	border-radius: 5px;
 	margin: 15px 50px;
 	padding: 15px 50px;
+	color: #000;
+	font-size: larger;
 
 }
 
@@ -108,6 +112,11 @@ section {
 	text-align: center;
 }
 
+.align-copyright {
+	padding: 20px;
+	display: inline-block;
+}
+
 footer {
 	background-color: #63d47b;
 	width: 100%;
@@ -119,7 +128,7 @@ footer {
 
 .social-media-container {
 	text-align: right;
-	margin-top: 9px;
+	margin-top: 14px;
 }
 
 .social-media {
