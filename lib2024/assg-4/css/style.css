@@ -70,7 +70,27 @@ section {
 	width: 100%;
 }
 
+h1 {
+	display: inline-block;
+	border: 0;
+	margin: 0;
+	padding-left: 60px;
+	padding-bottom: 45px;
+	float: left;
+	font-size: 38px;
+}
 
+h2 {
+	font-weight: normal;
+	font-size: 2em;
+	margin: 1em 0 .5em 0;
+
+}
+
+h3 {
+	font-weight: normal;
+	font-size: 1.5em;
+}
 
 .image-flex-sidebar {
 	position: static;
@@ -100,13 +120,18 @@ section {
 	position: static;
 	width: 100%;
 	padding-top: 20px;
+}
+
+.img-container h3 {
 	padding-left: 20px;
 }
 
 .align {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 5em;
+	margin-left: 3em;
 }
+
 
 .align p {
 	text-align: center;
