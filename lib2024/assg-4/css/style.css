@@ -12,11 +12,19 @@ header {
 }
 
 .logo {
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.image-flex {
 	position: static;
-	width: 115px;
+	display: inline-block;
 	box-sizing: border-box;
 	padding: 10px;
-	display: inline-block;
+	width: 90%;
+	margin-bottom: -1em;
+	margin-left: 9px;
+
 }
 
 body {
@@ -37,8 +45,8 @@ nav a {
 	text-decoration: none;
 	background-color: #6dcff6;
 	border-radius: 5px;
-	margin: 20px 50px;
-	padding: 15px 30px;
+	margin: 15px 50px;
+	padding: 15px 50px;
 
 }
 
@@ -46,18 +54,19 @@ div > h1 {
 	display: inline-block;
 	border: 0;
 	margin: 0;
+	padding-left: 60px;
+	padding-bottom: 45px;
+	float: left;
+	font-size: 38px;
 }
 
 section {
 	background-image: url(../img/circles-light.png);
 	text-align: left;
-}
-
-.image-flex {
-	position: static;
-	display: block;
 	width: 100%;
 }
+
+
 
 .image-flex-sidebar {
 	position: static;
@@ -73,20 +82,21 @@ section {
 	width: 55%;
 	box-sizing: border-box;
 	margin: 0;
+	padding: 20px;
 }
 
 .sidebar {
 	display: inline-block;
 	width: 35%;
 	box-sizing: border-box;
-	padding-left: 5%;
-	padding-top: 5%;
+	padding-left: 2%;
 }
 
 .img-container {
 	position: static;
 	width: 100%;
-	padding: 20px;
+	padding-top: 20px;
+	padding-left: 20px;
 }
 
 .align {
@@ -100,6 +110,7 @@ section {
 
 footer {
 	background-color: #63d47b;
+	width: 100%;
 }
 
 .social-media-container a {
