@@ -158,6 +158,7 @@ section article p {
 .image-flex-sidebar {
 	position: static;
 	display: block;
+	width: 100%;
 }
 
 .inline-blk {
@@ -177,6 +178,11 @@ section article p {
 	width: 35%;
 	box-sizing: border-box;
 	padding: 20px;
+	padding-top: 5em;
+}
+
+.sidebar p {
+	padding-right: 1em;
 }
 
 .img-container {
