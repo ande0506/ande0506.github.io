@@ -199,6 +199,7 @@ h3 {
 
 .align-copyright {
 	padding: 20px;
+	padding-top: 40px;
 	display: inline-block;
 }
 
@@ -207,14 +208,21 @@ footer {
 	width: 100%;
 }
 
-.social-media-container a {
+.align-social-media-container a {
 	text-decoration: none;
 }
 
 .social-media-container {
 	text-align: right;
-	margin-top: 14px;
-	margin-left: 24em;
+	float: right;
+	/*margin-top: 14px;
+	margin-left: 24em;*/
+}
+
+.align-social-media-container {
+	display: inline-block;
+	margin: 1em;
+	float: right;
 }
 
 .social-media {
