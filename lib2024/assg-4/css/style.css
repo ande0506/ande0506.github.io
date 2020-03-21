@@ -160,7 +160,8 @@ h3 {
 }
 
 .main-content {
-	display: inline-block;
+	/*display: inline-block;*/
+	float: left;
 	width: 55%;
 	box-sizing: border-box;
 	margin: 0;
@@ -168,7 +169,8 @@ h3 {
 }
 
 .sidebar {
-	display: inline-block;
+	/*display: inline-block;*/
+	float: left;
 	width: 35%;
 	box-sizing: border-box;
 	padding-left: 2%;
@@ -187,6 +189,7 @@ h3 {
 .align {
 	display: inline-block;
 	margin: 1em 4em 1em 3em;
+	float: left;
 }
 
 
