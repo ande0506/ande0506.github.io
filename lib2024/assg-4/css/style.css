@@ -148,6 +148,11 @@ h2 {
 h3 {
 	font-weight: normal;
 	font-size: 1.5em;
+	margin: 1em 0 .5em 0;
+}
+
+section article p {
+	margin-bottom: 1em;
 }
 
 .image-flex-sidebar {
@@ -160,20 +165,18 @@ h3 {
 }
 
 .main-content {
-	/*display: inline-block;*/
 	float: left;
 	width: 55%;
 	box-sizing: border-box;
 	margin: 0;
-	padding: 20px;
+	padding: 0 20px;
 }
 
 .sidebar {
-	/*display: inline-block;*/
 	float: left;
 	width: 35%;
 	box-sizing: border-box;
-	padding-left: 2%;
+	padding: 20px;
 }
 
 .img-container {
@@ -188,7 +191,7 @@ h3 {
 
 .align {
 	display: inline-block;
-	margin: 1em 4em 1em 3em;
+	margin: 0 4em 1em 3em;
 	float: left;
 }
 
@@ -215,12 +218,9 @@ footer {
 .social-media-container {
 	text-align: right;
 	float: right;
-	/*margin-top: 14px;
-	margin-left: 24em;*/
 }
 
 .align-social-media-container {
-	display: inline-block;
 	margin: 1em;
 	float: right;
 }
