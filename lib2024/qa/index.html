@@ -15,7 +15,7 @@
 				What are the three components of Web?
 			</p>
 			<p>
-				<strong>Ans: </strong>
+				<strong>Ans: </strong> <br>
 				The three components of the Web are HTML, CSS, JavaScript.
 			</p>
 		</li>
@@ -26,7 +26,7 @@
 				Define version control and give one example.
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
 				Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. An example of version control is GitHub.
 			</p>
 		</li>
@@ -38,7 +38,7 @@
 			</p>
 			
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
 				The &lt;title&gt; tag is used to create a title for a webpage.
 			</p>
 			<p>
@@ -52,7 +52,7 @@
 				<strong>Qus:</strong>
 				What tag is used to create a paragraph in html? Give an example.
 			</p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
 				The &lt;p&gt; tag is used to create a paragraph in HTML.
 			</p>
 			<p>
@@ -66,7 +66,7 @@
 				Identify the odd one from these tags: &lt;span&gt;, &lt;p&gt;, &lt;a&gt;, &lt;i&gt; and state the reason?
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
 				The &lt;p&gt; creates paragraphs. The &lt;a&gt; defines a hyperlink. The &lt;i&gt; defines a part of text in an alternate voice or mood usually in <i>italics</i>. I think the odd one is the &lt;span&gt; because it is used to group inline-elements in a document.
 			</p>
 		</li>
@@ -77,7 +77,7 @@
 				What are the tags required to create a navigation list in HTML? 
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
 				The tags; &lt;nav&gt;, &lt;ul&gt; and &lt;li&gt; are required to make a navigation list in HTML.
 			</p>
 		</li>
@@ -88,7 +88,7 @@
 				What element is used to create images? Name its attributes.  
 			</p>
 			<p>
-				<strong>An:</strong>
+				<strong>An:</strong> <br>
 				The &lt;img&gt; attribute is used to create images. &lt;src&gt;, &lt;alt&gt;, &lt;height&gt; and &lt;width&gt; are attributes of the img element.
 			</p>
 		</li>
@@ -99,7 +99,7 @@
 				Identify the odd one from these tags: &lt;table&gt;, &lt;tr&gt;, &lt;b&gt;, &lt;td&gt; and state the reason.
 			</p>
 			<p>
-				<strong>An:</strong>
+				<strong>An:</strong> <br>
 				The &lt;table&gt; tag is used to create a table in HTML. The &lt;tr&gt; tag defines a row in an HTML table.  The &lt;td&gt; tag defines a standard cell in an HTML table. The odd one is the &lt;b&gt; tag  as it creates <b>bold</b> text in HTML because it is not found neccessary in a &lt;table&gt; tag.
 			</p>
 		</li>
@@ -110,8 +110,10 @@
 				Give an example of color picker input.
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
+				We use hex notation to define colors found in a CSS block. 
 			</p>
+			<p>Example: color: #888888;</p>
 		</li>
 		<!-- Qus 10 -->
 		<li>
@@ -120,7 +122,8 @@
 				What is the use of name and value attributes? Give two examples.
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
+				The name attribute specifies a name for the element. The value attribute specifies the inital value for &lt;button&gt;,&lt;input&gt; and &lt;option&gt; elements and sets the value of list items in a &lt;li&gt; element. <br> Example: &lt;button name="subject" type="submit" value="fav_CSS"&gt;CSS&gt;/button&lt;
 			</p>
 		</li>
 		<!-- Qus 11 -->
@@ -130,7 +133,11 @@
 				Give an example of inline style.
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
+				Inline style is found inside the individual tag of an HTML document so that it may override the the value of the font-style css property. An example of inline style within a section tag would look like this.
+			</p>
+			<p>
+				&lt;section style="font-style:italic;"&gt; <br> This will make the font within the section italic.
 			</p>
 		</li>
 		<!-- Qus 12 -->
@@ -140,7 +147,8 @@
 				How would you link an external style sheet? Give example.
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
+				You can link an external style sheet by using the link tag in the head of your HTML. <br> The link tag looks like this. <br> &lt;link rel="stylesheet" type="text/css" href="css/style.css"&gt; <br> The href defines where the file is located. css/ is the folder the file style.css is found in.
 			</p>
 		</li>
 		<!-- Qus 13 -->
@@ -150,7 +158,12 @@
 				Create CSS block to center an element both horizontally and vertically that has position: abosolute and had width: 200px and height:200px.
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong><br>
+				h1, h2 { <br>
+					position: absolute; <br>
+					width: 200px; <br>
+					height: 200px; 
+			}
 			</p>
 		</li>
 		<!-- Qus 14 -->
@@ -160,7 +173,15 @@
 				Create CSS keyframes block called "spin" that rotates an element.
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
+				@keyframes spin { <br>
+					from { <br>
+					transform: rotate(0deg); <br>
+					} <br>
+					to { <br>
+					transform: rotate(360deg);
+					} <br>
+				}
 			</p>
 		</li>
 		<!-- Qus 15 -->
@@ -174,7 +195,10 @@
 				</ul>
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
+				animation: <br>
+				spin o.5s linear 5, 
+				
 			</p>
 		</li>
 		<!-- Qus 16 -->
@@ -184,7 +208,8 @@
 				How would you include create an alert with string "I love JavaScript" using JavaScript?
 			</p>
 			<p>
-				<strong>Ans:</strong>
+				<strong>Ans:</strong> <br>
+				alert ("I love JavaScript")
 			</p>
 		</li>
   </ol>
