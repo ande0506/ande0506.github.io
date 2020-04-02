@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Assignment</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/981b4531a6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="mylogo-title">
+			<h1>My Logo</h1>
+		</div>
+		<div class="navigation">
+			<nav>
+				<ul>
+					<li>
+						<a href="#">HOME</a>
+						<a href="#">ABOUT</a>
+						<a href="#">SCHEDULE</a>
+						<a href="#">PORTFOLIO</a>
+						<a href="#">CONTACT</a>
+					</li>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	<section id="column-one" class="section-one">
+		<div class="about">
+			<h2>ABOUT</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
+		</div>
+		<div class="sidebar-img">
+			<img src="img/bananabowl.jpg" class="bananabowl">
+		</div>
+	</section>
+	<section id="section-two" class="table">
+		<div class="heading-schedule">
+			<h2>SCHEDULE</h2>
+		</div>
+		<div class="table">
+			<table>
+				<thead>
+					<tr>
+						<th>TIME</th>
+						<th>MONDAY</th>
+						<th>TUESDAY</th>
+						<th>WEDNESDAY</th>
+						<th>THURSDAY</th>
+						<th>FRIDAY</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00 - 11:00</td>
+						<td>Communications I</td>
+						<td>Client Services</td>
+						<td>Special Collections</td>
+						<td>Directed Research Seminar</td>
+						<td>CLient Services</td>
+					</tr>
+					<tr>
+						<td>11:00 - 12:30</td>
+						<td>Reference</td>
+						<td>Internet App</td>
+						<td>Library Software</td>
+						<td>French</td>
+						<td>Reference</td>
+					</tr>
+					<tr>
+						<td>14:00 - 15:00</td>
+						<td>Acquisitions</td>
+						<td>General Elective</td>
+						<td>Marketing</td>
+						<td>Emerging Library Tech</td>
+						<td>Library Software</td>
+					</tr>
+					<tr>
+						<td>15:30 - 17:30</td>
+						<td>French</td>
+						<td>French</td>
+						<td>Acquisitions</td>
+						<td>Subject Analysis</td>
+						<td>Internet App</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<section id="section-three" class="edit-profile">
+		<div class="form">
+			<h2>EDIT PROFILE</h2>
+			<form action="somepage.php" method="get">
+				<div id="name-container" class="name">	
+					<label for="name">Name</label>
+					<input type="text" name="name">
+				</div>
+				<div id="email-container" class="email">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email">
+				</div>
+				<div id="address-container" class="address">
+					<label for="address">Address</label>
+					<input type="text" name="address">
+				</div>
+				<div id="city-container" class="city">
+					<label for="city">City</label>
+					<input type="text" name=""city>
+				</div>
+				<div id="drop-down-container" class="province">
+					<label for="province">Province</label>
+					<select name="province" id="province">
+						<option value="ON">Ontario</option>
+						<option value="QC">Quebec</option>
+						<option value="MB">Manitoba</option>
+						<option value="SK">Saskatchewan</option>
+						<option value="PE">Prince Edward Island</option>
+						<option value="AB">Alberta</option>
+					</select>
+				</div>
+				<div id="postal-code-container" class="postal-code">
+					<label for="postal-code">Postal Code</label>
+					<input type="text" require pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="postal-code" placeholder="A0A A0A">
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+		</div>
+	</section>
+	<section id="section-three" class="profile-info">
+		<div>
+			<h2>PROFILE INFO</h2>
+			<p>name: <span id="name-container"></span></p>
+			<p></p>
+		</div>
+	</section>
+	<footer>
+		<div id="column-one" class="quick-links">
+			<h3>QUICK LINKS</h3>
+		</div>
+		<div id="column-two" class="follow-us">
+			<h3>FOLLOW US</h3>
+			<i class="fab fa-facebook"></i>
+			<i class="fab fa-youtube"></i>
+			<i class="fab fa-twitter"></i>
+		</div>
+		<div id="column-three" class="address">
+			<h3>ADDRESS</h3>
+			<p>1383 Woodroffe Ave, <br> Nepean, ON K2G 1V8 <br> Canada</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="scripts/scripts.js"></script>
+</body>
+</html>
