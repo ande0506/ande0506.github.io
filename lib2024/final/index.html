@@ -24,6 +24,11 @@
 			</nav>
 		</div>
 	</header>
+	<section>
+		<div class="overlay-container">
+			<div class="loader"></div>
+		</div>
+	</section>
 	<section id="column-one" class="section-one">
 		<div class="about">
 			<h2>ABOUT</h2>
@@ -31,7 +36,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
 		</div>
 		<div class="sidebar-img">
-			<img src="img/bananabowl.jpg" class="bananabowl">
+			<img src="img/bananabowl.png" class="bananabowl">
 		</div>
 	</section>
 	<section id="section-two" class="table">
@@ -90,7 +95,7 @@
 	<section id="section-three" class="edit-profile">
 		<div class="form">
 			<h2>EDIT PROFILE</h2>
-			<form action="somepage.php" method="get">
+			<form action="submit.php" method="post">
 				<div id="name-container" class="name">	
 					<label for="name">Name</label>
 					<input type="text" name="name">
@@ -119,18 +124,20 @@
 					</select>
 				</div>
 				<div id="postal-code-container" class="postal-code">
-					<label for="postal-code">Postal Code</label>
-					<input type="text" require pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="postal-code" placeholder="A0A A0A">
+					<label for="pc">Postal Code</label>
+					<input type="text" require pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
 				</div>
 				<button type="submit">Submit</button>
 			</form>
 		</div>
 	</section>
-	<section id="section-three" class="profile-info">
+	<section id="results" class="profile-info">
 		<div>
 			<h2>PROFILE INFO</h2>
-			<p>name: <span id="name-container"></span></p>
-			<p></p>
+			<i class="fas fa-user-circle"></i>
+			<p >Name: <span id="name_result"></span></p>
+			<p >Postal Code: <span id="pc_result"></span></p>
+			<p >Email: <a href="#" id="email_result"></a></p>
 		</div>
 	</section>
 	<footer>
@@ -148,6 +155,7 @@
 			<p>1383 Woodroffe Ave, <br> Nepean, ON K2G 1V8 <br> Canada</p>
 		</div>
 	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/scripts.js"></script>
 </body>
 </html>
