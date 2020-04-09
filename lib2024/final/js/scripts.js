@@ -2,20 +2,39 @@ window.onload = init;
 
 function init() {
 
+// 	// JQuery function attached to the submit event of the form with id "form"
+// 	$('#form').submit(function (e) {
+// 		// e.preventDefualt to avoid the form being submitted to page specified in action attribute 
+//    		 e.preventDefault();
+//    		 // passing the current form (this) to variable form 
+//    		 $("#results").removeClass('reveal');
+//    		 var form = this;
+//    		 // fadeIn is a jQuery function to fadeIn an element 
+//    		 $(".overlay-container").fadeIn(1000, function(){
+//    		 		//call the showFormValues function and pass variable form to it as argument
+//    		 		showformValues(form);
+// 		   		 // fadeOut is a jQuery function to fadeOut an element 
+//    		 		$('.overlay-container').delay(500).fadeOut(500);
+//    		 		$("#results").addClass('reveal');
+//    		 })
+// 	});
+
+// }
+
 	// JQuery function attached to the submit event of the form with id "form"
-	$('#form').submit(function (e) {
+	$('#form-container').submit(function (e) {
 		// e.preventDefualt to avoid the form being submitted to page specified in action attribute 
    		 e.preventDefault();
    		 // passing the current form (this) to variable form 
-   		 $("#results").removeClass('reveal');
    		 var form = this;
    		 // fadeIn is a jQuery function to fadeIn an element 
    		 $(".overlay-container").fadeIn(1000, function(){
-   		 		//call the showFormValues function and pass variable form to it as argument
-   		 		showformValues(form);
-		   		 // fadeOut is a jQuery function to fadeOut an element 
+   		 		// //call the showFormValues function and pass variable form to it as argument
+   		 		// showformValues(form);
+   		 		// // call the createTableFromJSON function
+   		 		// createTableFromJSON();
+		   		 // // fadeOut is a jQuery function to fadeOut an element 
    		 		$('.overlay-container').delay(500).fadeOut(500);
-   		 		$("#results").addClass('reveal');
    		 })
 	});
 
