@@ -70,7 +70,34 @@ h1 {
 	font-family: 'BubblegumSans-Regular', sans-serif;
 }
 
-section, footer {
+h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #24698a;
+	padding: 5px 0 13px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #24698a;
+}
+
+.about {
+	padding: 1em 2em 0;
+}
+
+.about p {
+	padding-bottom: 1em;
+}
+
+table th {
+	font-size: 20px;
+	font-style: bold;
+	color: #24698a;
+}
+
+nav, section, footer {
 	font-family: 'Quicksand', sans-serif;
 }
 
@@ -94,19 +121,20 @@ section {
 }
 
 .about-container {
-	width: 50%;
+	width: 60%;
 	float: left;
 	box-sizing: border-box;
 }
 
 .sidebar-img {
-	width: 50%;
+	width: 40%;
 	float: left;
 	box-sizing: border-box;
+	padding: 4em 2em 0;
 }
 
 .table-container {
-	padding: 1em 3em;
+	padding: 0 2em 3em;
 }
 
 table {
@@ -136,10 +164,34 @@ tr:nth-child(odd) {
 	float: left;
 }
 
+.form {
+	padding-left: 2em;
+}
+
+.form div {
+	padding-bottom: 1em;
+}
+
+.form label {
+	padding-right: 4em;
+}
+
+/*person icon*/
+.fa-user-circle {
+	color:#24698a;
+	font-size: 100px;
+}
+
 .results {
 	width: 50%;
 	box-sizing: border-box;
 	float: left;
+	/*background: white;*/
+}
+
+.fa-envelope {
+	color: #24698a;
+	font-size: 30px;
 }
 
 button {
@@ -159,17 +211,52 @@ footer {
 	float: left;
 }
 
+.follow-us, .address, .quick-links {
+	width: 33.33%;
+	box-sizing: border-box;
+	float: left;
+	padding: 2em 3em;
+}
+
+.quick-links a {
+	text-decoration: none;
+	color: black;
+}
+
+.quick-links li {
+	padding: 1em;
+}
+
+.follow-us i {
+	padding: 30px 9px;
+}
+
+.address p {
+	padding: 17px 10px 0 20px;
+}
+
+.address br {
+	padding: 3px;
+}
+
 .fa-facebook {
-	color: #3b5999; 
+	color: #3b5999;
+	font-size: 45px; 
 }
 
 .fa-youtube {
 	color: #cd201f;
+	font-size: 45px;
 }
 
 .fa-twitter {
 	color: #55acee;
+	font-size: 45px;
 }
+
+/*.results-container {
+	background: white;
+}*/
 
 div#results {
   border-radius: 5px;
@@ -192,6 +279,7 @@ div#results {
 .overlay-container {
 	display: none;
 	position: fixed;
+	max-width: 1024px;
 	width: 100%;
 	height: 100%;
 	background: rgb(150,255,255);

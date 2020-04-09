@@ -2,38 +2,10 @@ window.onload = init;
 
 function init() {
 
-// 	// JQuery function attached to the submit event of the form with id "form"
-// 	$('#form').submit(function (e) {
-// 		// e.preventDefualt to avoid the form being submitted to page specified in action attribute 
-//    		 e.preventDefault();
-//    		 // passing the current form (this) to variable form 
-//    		 $("#results").removeClass('reveal');
-//    		 var form = this;
-//    		 // fadeIn is a jQuery function to fadeIn an element 
-//    		 $(".overlay-container").fadeIn(1000, function(){
-//    		 		//call the showFormValues function and pass variable form to it as argument
-//    		 		showformValues(form);
-// 		   		 // fadeOut is a jQuery function to fadeOut an element 
-//    		 		$('.overlay-container').delay(500).fadeOut(500);
-//    		 		$("#results").addClass('reveal');
-//    		 })
-// 	});
-
-// }
-
-	// JQuery function attached to the submit event of the form with id "form"
 	$('#form-container').submit(function (e) {
-		// e.preventDefualt to avoid the form being submitted to page specified in action attribute 
    		 e.preventDefault();
-   		 // passing the current form (this) to variable form 
-   		 var form = this;
-   		 // fadeIn is a jQuery function to fadeIn an element 
+   		 var form = this; 
    		 $(".overlay-container").fadeIn(1000, function(){
-   		 		// //call the showFormValues function and pass variable form to it as argument
-   		 		// showformValues(form);
-   		 		// // call the createTableFromJSON function
-   		 		// createTableFromJSON();
-		   		 // // fadeOut is a jQuery function to fadeOut an element 
    		 		$('.overlay-container').delay(500).fadeOut(500);
    		 })
 	});
@@ -52,13 +24,13 @@ function showformValues(form){
 
 		// following code does the following : 
 		// 1) $("#results") -- (Gets the  selects the div with id results 
-		// 2) .fund("#"+field.name+"_result") -- finds the element with id equal to the name of the field being accessed along with text ("_result") Eg : name, pc_result, email_result
+		// 2) .find("#"+field.name+"_result") -- finds the element with id equal to the name of the field being accessed along with text ("_result") Eg : name, pc_result, email_result
 		// 3) Modifies the text inside the selected element and replaces it with the value of this field   
-		$("#results").find("#"+field.name+"_result").text(field.value);
+		$("#results-container").find("#"+field.name+"name_result").text(field.value);
 
 		// special check for email to add a link instead of just string
 		if(field.name=="email"){
-			$("#results").find("#"+field.name+"_result").attr("href", "mailto:"+field.value);
+			$("#results-container").find("#"+field.name+"email_result").attr("href", "mailto:"+field.value);
 		}
 	})				
 }
