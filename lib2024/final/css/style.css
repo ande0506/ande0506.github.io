@@ -172,8 +172,18 @@ tr:nth-child(odd) {
 	padding-bottom: 1em;
 }
 
-.form label {
-	padding-right: 4em;
+/* .col-25 and .col-75 are label and input columns*/
+
+.col-25 {
+	float: left;
+  	width: 25%;
+  	margin-top: 6px;
+}
+
+.col-75 {
+	 float: left;
+  	width: 75%;
+  	margin-top: 6px;
 }
 
 /*person icon*/
@@ -197,11 +207,12 @@ tr:nth-child(odd) {
 button {
   background-color: white;
   padding: 14px 20px;
-  margin: 8px 0;
+ /* margin: 8px 0;*/
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: all 0.3s ease;
+/*  transition: all 0.3s ease;*/
+  float: right;
 }
 
 footer {
@@ -275,7 +286,7 @@ div#results {
 #results.reveal span, #results.reveal a {
 	opacity: 1;
 }
-
+ /*copy and paste from overlay-loader.css from week 11 in-class*/
 .overlay-container {
 	display: none;
 	position: fixed;
@@ -284,9 +295,10 @@ div#results {
 	height: 100%;
 	background: rgb(150,255,255);
 	background: radial-gradient(circle, rgba(150,255,255,0.5777661406359419) 7%, rgba(249,255,138,1) 92%);
+	top: 0;
 	z-index: 2;
 }
-
+ /*copy and paste from overlay-loader.css from week 11 in-class*/
 .loader {
 	position: absolute;
 	left: 50%;
@@ -312,36 +324,23 @@ div#results {
 }
 }
 
-		/*This @keyframes declaration will change the color from blue to orange to blue */
-		@keyframes change-color {
-			/*0 % is begining*/
-			0% {
-				border-top-color: #3498db;
-			}
+@keyframes change-color {
+	0% {
+		border-top-color: #3498db;
+}
+	100% {
+		border-top-color: #3498db;
+}
+}
 
-			/*50% is the middle*/
-			50% {
-				border-top-color: #FF5722;
-			}
-			/*100% is ending*/
-			100% {
-				border-top-color: #3498db;
-			}
-		}
-
-		@keyframes border-radius-change {
-
-			0% {
-				border-radius: 50%;
-			}
-
-			50% {
-
-				border-radius: 0%;
-			}
-
-			100% {
-
-				border-radius: 50%;
-			}
-		}
+@keyframes border-radius-change {
+	0% {
+		border-radius: 50%;
+}
+	50% {
+		border-radius: 0%;
+}
+	100% {
+		border-radius: 50%;
+}
+}

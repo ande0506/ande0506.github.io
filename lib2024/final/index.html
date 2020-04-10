@@ -99,24 +99,34 @@
 		<div class="form">
 			<h2>EDIT PROFILE</h2>
 			<form action="submit.php" method="post">
-				<div id="name-container" class="name">	
+				<div id="name-container" class="col-25">	
 					<label for="name">Name</label>
+				</div>
+				<div class="col-75">
 					<input type="text" name="name">
 				</div>
-				<div id="email-container" class="email">
+				<div id="email-container" class="col-25">
 					<label for="email">Email</label>
-					<input type="email" name="email" id="email">
 				</div>
-				<div id="address-container" class="address-container">
+				<div class="col-75">
+					<input type="email" required="" name="email" id="email">
+				</div>
+				<div id="address-container" class="col-25">
 					<label for="address-form">Address</label>
+				</div>
+				<div class="col-75">
 					<input type="text" name="address-form">
 				</div>
-				<div id="city-container" class="city">
+				<div id="city-container" class="col-25">
 					<label for="city">City</label>
+				</div>
+				<div class="col-75">
 					<input type="text" name=""city>
 				</div>
-				<div id="drop-down-container" class="province">
+				<div id="drop-down-container" class="col-25">
 					<label for="province">Province</label>
+				</div>
+				<div class="col-75">
 					<select name="province" id="province">
 						<option value="ON">Ontario</option>
 						<option value="QC">Quebec</option>
@@ -126,21 +136,23 @@
 						<option value="AB">Alberta</option>
 					</select>
 				</div>
-				<div id="postal-code-container" class="postal-code">
+				<div id="postal-code-container" class="col-25">
 					<label for="pc">Postal Code</label>
+				</div>
+				<div class="col-75">
 					<input type="text" require pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
 				</div>
 				<button type="submit">Submit</button>
 			</form>
 		</div>
 	</section>
-	<section id="results" class="results clearfix">
+	<section id="results" class="results">
 		<h2>PROFILE INFO</h2>
-		<div id="results-container" class="results-container">
+		<div id="results">
 			<i class="fas fa-user-circle"></i>
 			<p ><span id="name_result"></span></p>
-			<p ><span id="email_result"></span></p>
-			<p ><a href="#" id="address_result, city_result, province_result, pc_result"></a></p>
+			<p ><span id="pc_result"></span></p>
+			<p ><a href="#" id="address_result"></a></p>
 			<i class="far fa-envelope"></i>
 		</div>
 	</section>
