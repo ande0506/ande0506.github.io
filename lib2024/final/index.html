@@ -2,14 +2,18 @@
 <html>
 <head>
 	<title>Final Assignment</title>
+	<!-- CSS stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- Fonts stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- script is for icons from fontawesome, I have a kit code and this is the script it told me to copy -->
+	<!-- This allows for the icons to appear on the webpage -->
 	<script src="https://kit.fontawesome.com/981b4531a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<div class="mylogo-title">
-			<h1>My Logo</h1>
+			<h1>My Logo is BANANAS</h1>
 		</div>
 		<div class="navigation">
 			<nav>
@@ -98,35 +102,47 @@
 	<section id="form-container" class="form-container clearfix">
 		<div class="form">
 			<h2>EDIT PROFILE</h2>
-			<form action="submit.php" method="post">
+			<form action="submit.php" method="post" id="form">
+				
+				<!-- NAME -->
 				<div id="name-container" class="col-25">	
 					<label for="name">Name</label>
 				</div>
-				<div class="col-75">
+				<div id="name-container" class="col-75" >
 					<input type="text" name="name">
 				</div>
+
+				<!-- EMAIL -->
 				<div id="email-container" class="col-25">
 					<label for="email">Email</label>
 				</div>
-				<div class="col-75">
-					<input type="email" required="" name="email" id="email">
+				<div id="email-container" class="col-75" >
+					<input type="email"  name="email" id="email" required>
 				</div>
+
+
+				<!-- ADDRESS -->
 				<div id="address-container" class="col-25">
 					<label for="address-form">Address</label>
 				</div>
-				<div class="col-75">
+				<div id="address-container" class="col-75" >
 					<input type="text" name="address-form">
 				</div>
+
+
+				<!-- CITY -->
 				<div id="city-container" class="col-25">
 					<label for="city">City</label>
 				</div>
-				<div class="col-75">
-					<input type="text" name=""city>
+				<div id="city-container" class="col-75">
+					<input type="text" name="city">
 				</div>
+
+				<!-- DROP DOWN PROVINCE-->
 				<div id="drop-down-container" class="col-25">
 					<label for="province">Province</label>
 				</div>
-				<div class="col-75">
+				<div id="drop-down-container" class="col-75" >
 					<select name="province" id="province">
 						<option value="ON">Ontario</option>
 						<option value="QC">Quebec</option>
@@ -136,12 +152,16 @@
 						<option value="AB">Alberta</option>
 					</select>
 				</div>
+
+				<!-- POSTAL CODE -->
 				<div id="postal-code-container" class="col-25">
 					<label for="pc">Postal Code</label>
 				</div>
-				<div class="col-75">
-					<input type="text" require pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
+				<div id="postal-code-container" class="col-75">
+					<input type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
 				</div>
+
+				<!-- SUBMIT BUTTON -->
 				<button type="submit">Submit</button>
 			</form>
 		</div>
@@ -151,8 +171,11 @@
 		<div id="results">
 			<i class="fas fa-user-circle"></i>
 			<p >Name:<span id="name_result"></span></p>
-			<p >Postal Code:<span id="pc_result"></span></p>
 			<p >Email:<a href="#" id="email_result"></a></p>
+			<p >Address: <span id="address_result"></span></p>
+			<p >City: <span id="city_result"></span></p>
+			<p >Province: <span id="province_result"></span></p>
+			<p >Postal Code:<span id="pc_result"></span></p>
 			<i class="far fa-envelope"></i>
 		</div>
 	</section>

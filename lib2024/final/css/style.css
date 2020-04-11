@@ -67,7 +67,11 @@ html {
 }
 
 h1 {
-	font-family: 'BubblegumSans-Regular', sans-serif;
+	font-family: 'alpha_echoregular';
+	font-size: 30px;
+	color: #24698a;
+	letter-spacing: 3px;
+	padding-left: 1em;
 }
 
 h2 {
