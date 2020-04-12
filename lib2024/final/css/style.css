@@ -144,9 +144,6 @@ section {
 	padding: 0 4em 2em;
 }
 
-/*table {
-	background-color: white;
-}*/
 
 table, th, td {
 	border: 1px solid black;
@@ -173,6 +170,7 @@ tr:nth-child(odd) {
 
 .form {
 	padding-left: 2em;
+	padding-bottom: 27px;
 }
 
 .form div {
@@ -193,23 +191,6 @@ tr:nth-child(odd) {
   	margin-top: 6px;
 }
 
-/*person icon*/
-.fa-user-circle {
-	color:black;
-	font-size: 100px;
-}
-
-.results {
-	width: 50%;
-	box-sizing: border-box;
-	float: left;
-	/*background: white;*/
-}
-
-.fa-envelope {
-	color: black;
-	font-size: 30px;
-}
 
 button {
   background-color: white;
@@ -221,11 +202,15 @@ button {
   margin-left: 16em;
 }
 
-footer {
-	background-color: #d1cbd0;
-	width: 100%;
-	box-sizing: border-box;
-	float: left;
+/*person icon*/
+.fa-user-circle {
+	color:black;
+	font-size: 100px;
+}
+
+.fa-envelope {
+	color: black;
+	font-size: 30px;
 }
 
 .follow-us, .address, .quick-links {
@@ -271,13 +256,16 @@ footer {
 	font-size: 45px;
 }
 
-.results p {
-	padding-bottom: 1em;
+footer {
+	background-color: #d1cbd0;
+	width: 100%;
+	box-sizing: border-box;
+	float: left;
 }
 
 #name_result {
 	color: black;
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: bold;
 }
 
@@ -285,8 +273,16 @@ footer {
 	text-decoration: none;
 }
 
+.results {
+	width: 50%;
+	box-sizing: border-box;
+	float: left;
+	padding-bottom: 25px;
+}
+
 .results p {
-	display: block;
+	padding-bottom: 1em;
+	font-weight: bold;
 }
 
 /*TEACHER COPY PAST CSS FROM FORM_VALIDATION.CSS*/
@@ -294,7 +290,6 @@ footer {
 div#results {
   border-radius: 5px;
   background-color: white;
-  padding: 1em;
   max-width: 250px;
   margin: 0 auto;
   text-align: center;
