@@ -47,7 +47,7 @@
 	</section>
 	<section id="img-container" class="img-container clearfix">
 		<div class="sidebar-img">
-			<img src="img/rose.jpg" class="rose">
+			<img src="img/rose.jpg" alt="rose" class="rose">
 		</div>
 	</section>
 	<section id="table-container" class="table-container clearfix">
@@ -112,25 +112,25 @@
 				<div id="name-container" class="col-25">	
 					<label for="name">Name</label>
 				</div>
-				<div id="name-container" class="col-75" >
-					<input type="text" name="name">
+				<div class="col-75" >
+					<input id="name" type="text" name="name">
 				</div>
 
 				<!-- EMAIL -->
 				<div id="email-container" class="col-25">
 					<label for="email">Email</label>
 				</div>
-				<div id="email-container" class="col-75" >
+				<div class="col-75" >
 					<input type="email"  name="email" id="email" required>
 				</div>
 
 
 				<!-- ADDRESS -->
 				<div id="address-container" class="col-25">
-					<label for="address-form">Address</label>
+					<label for="address">Address</label>
 				</div>
-				<div id="address-container" class="col-75" >
-					<input type="text" name="address-form">
+				<div class="col-75" >
+					<input id="address" type="text" name="address">
 				</div>
 
 
@@ -138,15 +138,15 @@
 				<div id="city-container" class="col-25">
 					<label for="city">City</label>
 				</div>
-				<div id="city-container" class="col-75">
-					<input type="text" name="city">
+				<div class="col-75">
+					<input id="city" type="text" name="city">
 				</div>
 
 				<!-- DROP DOWN PROVINCE-->
 				<div id="drop-down-container" class="col-25">
 					<label for="province">Province</label>
 				</div>
-				<div id="drop-down-container" class="col-75" >
+				<div class="col-75" >
 					<select name="province" id="province">
 						<option value="ON">Ontario</option>
 						<option value="QC">Quebec</option>
@@ -161,25 +161,25 @@
 				<div id="postal-code-container" class="col-25">
 					<label for="pc">Postal Code</label>
 				</div>
-				<div id="postal-code-container" class="col-75">
-					<input type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
+				<div class="col-75">
+					<input id="pc" type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
 				</div>
 
 				<!-- SUBMIT BUTTON -->
-				<button type="submit">Submit</button>
+				<div id="button" class="button">
+					<button type="submit">Submit</button>
+				</div>
 			</form>
 		</div>
 	</section>
-	<section id="results" class="results">
+	<section id="results-container" class="results clearfix">
 		<h2>PROFILE INFO</h2>
-		<div id="results">
+		<div id="results" class="results">
 			<i class="fas fa-user-circle"></i>
-			<p >Name:<span id="name_result"></span></p>
-			<p >Email:<a href="#" id="email_result"></a></p>
-			<p >Address: <span id="address_result"></span></p>
-			<p >City: <span id="city_result"></span></p>
-			<p >Province: <span id="province_result"></span></p>
-			<p >Postal Code:<span id="pc_result"></span></p>
+			<p ><span id="name_result"></span></p>
+			<p ><a href="#" id="email_result"></a></p>
+			<p ><span id="address_result"></span><span id="city_result"></span></p>
+			<p ><span id="province_result"></span><span id="pc_result"></span></p>
 			<i class="far fa-envelope"></i>
 		</div>
 	</section>
@@ -197,9 +197,10 @@
 		</div>
 		<div id="follow-us" class="follow-us">
 			<h3>FOLLOW US</h3>
-			<i class="fab fa-facebook"></i>
-			<i class="fab fa-youtube"></i>
-			<i class="fab fa-twitter"></i>
+			<a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+			<a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
+			<a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+			
 		</div>
 		<div id="address" class="address">
 			<h3>ADDRESS</h3>
@@ -209,6 +210,6 @@
 		</div>
 	</footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/scripts.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
