@@ -11,7 +11,7 @@
 	<script src="https://kit.fontawesome.com/981b4531a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header>
+	<header class="clearfix">
 		<div class="mylogo-title">
 			<h1>my logo</h1>
 		</div>
@@ -29,161 +29,161 @@
 			</nav>
 		</div>
 	</header>
+	<main class="clearfix">
+		<!-- LOADER STUFF -->
+		<section>
+			<div class="overlay-container">
+				<div class="loader"></div>
+			</div>
+		</section>
 
-	<!-- LOADER STUFF -->
-	<section>
-		<div class="overlay-container">
-			<div class="loader"></div>
-		</div>
-	</section>
+		<section id="about-container" class="about-container clearfix">
+			<div class="about">
+				<h2>ABOUT</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
+			</div>
+		</section>
+		<section id="img-container" class="img-container clearfix">
+			<div class="sidebar-img">
+				<img src="img/rose.jpg" alt="rose" class="rose">
+			</div>
+		</section>
+		<section id="table-container" class="table-container clearfix">
+			<div class="heading-schedule">
+				<h2>SCHEDULE</h2>
+			</div>
+			<div class="table">
+				<table>
+					<thead>
+						<tr>
+							<th>TIME</th>
+							<th>MONDAY</th>
+							<th>TUESDAY</th>
+							<th>WEDNESDAY</th>
+							<th>THURSDAY</th>
+							<th>FRIDAY</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>09:00 - 11:00</td>
+							<td>Communications I</td>
+							<td>Client Services</td>
+							<td>Special Collections</td>
+							<td>Directed Research Seminar</td>
+							<td>CLient Services</td>
+						</tr>
+						<tr>
+							<td>11:00 - 12:30</td>
+							<td>Reference</td>
+							<td>Internet App</td>
+							<td>Library Software</td>
+							<td>French</td>
+							<td>Reference</td>
+						</tr>
+						<tr>
+							<td>14:00 - 15:00</td>
+							<td>Acquisitions</td>
+							<td>General Elective</td>
+							<td>Marketing</td>
+							<td>Emerging Library Tech</td>
+							<td>Library Software</td>
+						</tr>
+						<tr>
+							<td>15:30 - 17:30</td>
+							<td>French</td>
+							<td>French</td>
+							<td>Acquisitions</td>
+							<td>Subject Analysis</td>
+							<td>Internet App</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+		<section id="form-container" class="form-container clearfix">
+			<div class="form">
+				<h2>EDIT PROFILE</h2>
+				<form id="form" action="submit.php" method="post" >
+					
+					<!-- NAME -->
+					<div id="name-container" class="col-25">	
+						<label for="name">Name</label>
+					</div>
+					<div class="col-75" >
+						<input id="name" type="text" name="name">
+					</div>
 
-
-	<section id="about-container" class="about-container clearfix">
-		<div class="about">
-			<h2>ABOUT</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
-		</div>
-	</section>
-	<section id="img-container" class="img-container clearfix">
-		<div class="sidebar-img">
-			<img src="img/rose.jpg" alt="rose" class="rose">
-		</div>
-	</section>
-	<section id="table-container" class="table-container clearfix">
-		<div class="heading-schedule">
-			<h2>SCHEDULE</h2>
-		</div>
-		<div class="table">
-			<table>
-				<thead>
-					<tr>
-						<th>TIME</th>
-						<th>MONDAY</th>
-						<th>TUESDAY</th>
-						<th>WEDNESDAY</th>
-						<th>THURSDAY</th>
-						<th>FRIDAY</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>09:00 - 11:00</td>
-						<td>Communications I</td>
-						<td>Client Services</td>
-						<td>Special Collections</td>
-						<td>Directed Research Seminar</td>
-						<td>CLient Services</td>
-					</tr>
-					<tr>
-						<td>11:00 - 12:30</td>
-						<td>Reference</td>
-						<td>Internet App</td>
-						<td>Library Software</td>
-						<td>French</td>
-						<td>Reference</td>
-					</tr>
-					<tr>
-						<td>14:00 - 15:00</td>
-						<td>Acquisitions</td>
-						<td>General Elective</td>
-						<td>Marketing</td>
-						<td>Emerging Library Tech</td>
-						<td>Library Software</td>
-					</tr>
-					<tr>
-						<td>15:30 - 17:30</td>
-						<td>French</td>
-						<td>French</td>
-						<td>Acquisitions</td>
-						<td>Subject Analysis</td>
-						<td>Internet App</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</section>
-	<section id="form-container" class="form-container clearfix">
-		<div class="form">
-			<h2>EDIT PROFILE</h2>
-			<form id="form" action="submit.php" method="post" >
-				
-				<!-- NAME -->
-				<div id="name-container" class="col-25">	
-					<label for="name">Name</label>
-				</div>
-				<div class="col-75" >
-					<input id="name" type="text" name="name">
-				</div>
-
-				<!-- EMAIL -->
-				<div id="email-container" class="col-25">
-					<label for="email">Email</label>
-				</div>
-				<div class="col-75" >
-					<input type="email"  name="email" id="email" required>
-				</div>
-
-
-				<!-- ADDRESS -->
-				<div id="address-container" class="col-25">
-					<label for="address">Address</label>
-				</div>
-				<div class="col-75" >
-					<input id="address" type="text" name="address">
-				</div>
+					<!-- EMAIL -->
+					<div id="email-container" class="col-25">
+						<label for="email">Email</label>
+					</div>
+					<div class="col-75" >
+						<input type="email"  name="email" id="email" required>
+					</div>
 
 
-				<!-- CITY -->
-				<div id="city-container" class="col-25">
-					<label for="city">City</label>
-				</div>
-				<div class="col-75">
-					<input id="city" type="text" name="city">
-				</div>
+					<!-- ADDRESS -->
+					<div id="address-container" class="col-25">
+						<label for="address">Address</label>
+					</div>
+					<div class="col-75" >
+						<input id="address" type="text" name="address">
+					</div>
 
-				<!-- DROP DOWN PROVINCE-->
-				<div id="drop-down-container" class="col-25">
-					<label for="province">Province</label>
-				</div>
-				<div class="col-75" >
-					<select name="province" id="province">
-						<option value="ON">Ontario</option>
-						<option value="QC">Quebec</option>
-						<option value="MB">Manitoba</option>
-						<option value="SK">Saskatchewan</option>
-						<option value="PE">Prince Edward Island</option>
-						<option value="AB">Alberta</option>
-					</select>
-				</div>
 
-				<!-- POSTAL CODE -->
-				<div id="postal-code-container" class="col-25">
-					<label for="pc">Postal Code</label>
-				</div>
-				<div class="col-75">
-					<input id="pc" type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
-				</div>
+					<!-- CITY -->
+					<div id="city-container" class="col-25">
+						<label for="city">City</label>
+					</div>
+					<div class="col-75">
+						<input id="city" type="text" name="city">
+					</div>
 
-				<!-- SUBMIT BUTTON -->
-				<div id="button" class="button">
-					<button type="submit">Submit</button>
-				</div>
-			</form>
-		</div>
-	</section>
-	<section id="results-container" class="results clearfix">
-		<h2>PROFILE INFO</h2>
-		<div id="results" class="results">
-			<i class="fas fa-user-circle"></i>
-			<p >ID:<span id="name_result"></span></p>
-			<p >EML:<a href="#" id="email_result"></a></p>
-			<p >ADDR:<span id="address_result"></span>, <span id="city_result"></span></p>
-			<p ><span id="province_result"></span>, <span id="pc_result"></span></p>
-			<i class="far fa-envelope"></i>
-		</div>
-	</section>
-	<footer>
+					<!-- DROP DOWN PROVINCE-->
+					<div id="drop-down-container" class="col-25">
+						<label for="province">Province</label>
+					</div>
+					<div class="col-75" >
+						<select name="province" id="province">
+							<option value="ON">Ontario</option>
+							<option value="QC">Quebec</option>
+							<option value="MB">Manitoba</option>
+							<option value="SK">Saskatchewan</option>
+							<option value="PE">Prince Edward Island</option>
+							<option value="AB">Alberta</option>
+						</select>
+					</div>
+
+					<!-- POSTAL CODE -->
+					<div id="postal-code-container" class="col-25">
+						<label for="pc">Postal Code</label>
+					</div>
+					<div class="col-75">
+						<input id="pc" type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" name="pc" placeholder="A0A A0A">
+					</div>
+
+					<!-- SUBMIT BUTTON -->
+					<div id="button" class="button">
+						<button type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+		</section>
+		<section id="results-container" class="results clearfix">
+			<h2>PROFILE INFO</h2>
+			<div id="results" class="results">
+				<i class="fas fa-user-circle"></i>
+				<p >ID: <span id="name_result"></span></p>
+				<p >EML: <a href="#" id="email_result"></a></p>
+				<p >ADDR: <span id="address_result"></span>, <span id="city_result"></span></p>
+				<p ><span id="province_result"></span>, <span id="pc_result"></span></p>
+				<i class="far fa-envelope"></i>
+			</div>
+		</section>
+	</main>
+	<footer class="clearfix">
 		<div id="quick-links" class="quick-links clearfix">
 			<h3>QUICK LINKS</h3>
 			<nav>
@@ -200,7 +200,6 @@
 			<a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
 			<a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a>
 			<a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
-			
 		</div>
 		<div id="address" class="address">
 			<h3>ADDRESS</h3>

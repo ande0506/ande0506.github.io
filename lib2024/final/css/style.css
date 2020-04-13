@@ -65,6 +65,10 @@ html {
 	box-sizing: border-box;
 }
 
+nav, section, footer {
+	font-family: 'Quicksand', sans-serif;
+}
+
 h1 {
 	font-family: 'alpha_echoregular';
 	font-size: 30px;
@@ -86,26 +90,14 @@ h3 {
 	color: black;
 }
 
-.about {
-	padding: 1em 2em 0;
-}
+/************************
+		MOBILE FIRST
+************************/
 
-.about p {
-	padding-bottom: 1em;
-}
+/*Make sure major containers in your HTML file are set to 100% width to achieve Fluid Layout */
 
-table th {
-	font-size: 20px;
-	font-weight: bold;
-	color: black;
-}
-
-table {
-	max-width: 905px;
-}
-
-nav, section, footer {
-	font-family: 'Quicksand', sans-serif;
+header, main, footer {
+	width: 100%;
 }
 
 .mylogo-title {
@@ -123,14 +115,24 @@ nav, section, footer {
 	padding: 15px 35px;
 }
 
-section {
-	background-image: url(../img/greyfloral.png);
-}
-
 .about-container {
 	width: 60%;
 	float: left;
 	box-sizing: border-box;
+}
+
+
+section {
+	background-image: url(../img/greyfloral.png);
+}
+
+
+.about {
+	padding: 1em 2em 0;
+}
+
+.about p {
+	padding-bottom: 1em;
 }
 
 .sidebar-img {
@@ -143,7 +145,16 @@ section {
 .table-container {
 	padding: 0 4em 2em;
 }
+table {
+	max-width: 905px;
+}
 
+table th {
+	font-size: 20px;
+	font-weight: bold;
+	color: black;
+	background-color: white;
+}
 
 table, th, td {
 	border: 1px solid black;
@@ -152,10 +163,6 @@ table, th, td {
 th, td {
 	text-align: center;
 	padding: 10px;
-}
-
-th {
-	background-color: white;
 }
 
 tr:nth-child(odd) {
@@ -213,6 +220,12 @@ button {
 	font-size: 30px;
 }
 
+footer {
+	background-color: #d1cbd0;
+	box-sizing: border-box;
+	float: left;
+}
+
 .follow-us, .address, .quick-links {
 	width: 33.33%;
 	box-sizing: border-box;
@@ -237,10 +250,6 @@ button {
 	padding: 17px 10px 0 20px;
 }
 
-.address br {
-	padding: 3px;
-}
-
 .fa-facebook {
 	color: #3b5999;
 	font-size: 45px; 
@@ -256,12 +265,7 @@ button {
 	font-size: 45px;
 }
 
-footer {
-	background-color: #d1cbd0;
-	width: 100%;
-	box-sizing: border-box;
-	float: left;
-}
+
 
 #name_result {
 	color: black;
@@ -285,7 +289,6 @@ footer {
 	font-weight: bold;
 }
 
-/*TEACHER COPY PAST CSS FROM FORM_VALIDATION.CSS*/
 
 div#results {
   border-radius: 5px;
@@ -304,7 +307,7 @@ div#results {
 #results.reveal span, #results.reveal a {
 	opacity: 1;
 }
- /*copy and paste from overlay-loader.css from week 11 in-class*/
+
 .overlay-container {
 	display: none;
 	position: fixed;
@@ -315,8 +318,7 @@ div#results {
 	background: radial-gradient(circle, rgba(255,255,255,0.5777661406359419) 7%, rgba(0,0,0,1) 92%);
 	top: 0;
 	z-index: 2;
-}
- /*copy and paste from overlay-loader.css from week 11 in-class*/
+
 .loader {
 	position: absolute;
 	left: 50%;
@@ -361,4 +363,33 @@ div#results {
 	100% {
 		border-radius: 50%;
 }
+}
+
+
+/*This media query will only target the tablet size*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+	header {
+		background: #FFEB3B;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	footer {
+		background: grey;
+	}
+}
+
+/*This media query targets, tablet and above*/
+@media only screen and (min-width: 768px) {
+	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+
+		max-width: 1024px;
+		margin: 0 auto;
+
+	}
 }
